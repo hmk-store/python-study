@@ -11,6 +11,15 @@
 file = open('C://Users/xin/Desktop/工作/text.txt','w')
 file.write('Hello world')
 
+def text_create(name,msg):
+    desktop_path = 'C://Users/xin/Desktop/工作/'
+    full_path = desktop_path + name + '.txt'
+    file = open(full_path,'w')
+    file.write(msg)
+    file.close()
+    print('Done')
+text_create('This-is-a-test','hello world')
+
 
 
 
